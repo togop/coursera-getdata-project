@@ -12,7 +12,6 @@ trainActivity <- read.table("UCI HAR Dataset/train/y_train.txt", col.names=c("ac
 trainSubject <- read.table("UCI HAR Dataset/train/subject_train.txt", col.names=c("subject"))
 
 trainData <- cbind(trainSet,trainSubject,trainActivity,set="train")
-head(trainData)
 
 testSet <- read.table("UCI HAR Dataset/test/X_test.txt")
 testActivity <- read.table("UCI HAR Dataset/test/y_test.txt", col.names=c("activity.label"))
@@ -25,8 +24,6 @@ allData <- rbind(trainData,testData)
 # 2. Extracts only the measurements on the mean and standard deviation for each measurement. 
 # Get features names.
 features <- read.table("UCI HAR Dataset/features.txt", as.is = TRUE, col.names=c("feature.id", "feature.name"))
-
-# subset_data_cols <- grep(".*mean\\(\\)|.*std\\(\\)", data_cols$MeasureName)
 
 selectedCols <- features[grepl("mean\\(\\)", features$feature.name) | grepl("std\\(\\)", features$feature.name), ]
 selectedCols <- paste("V",as.character(selectedCols$feature.id),sep = "")
