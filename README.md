@@ -15,7 +15,7 @@ Files:
  - 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
 
 * CodeBook.md A code book for the project
-* tidy.txt the result file from the run_analysis.R script.
+* tidy.txt the result file from the **run_analysis.R** script.
 * README.md this file 
 
 ##  Running
