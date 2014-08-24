@@ -1,12 +1,13 @@
 ## Getting and Cleaning Data - Course Project
 =============================================
 
-This is my repo for the [Getting and Cleaning Data course on Coursera](https://class.coursera.org/getdata-006) Course Project.
+This is my repo for the [Getting and Cleaning Data course on Coursera](https://www.coursera.org/course/getdata) Course Project.
 
 Source dataset https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip.
 
 ##  Running
 ```{r}
+require(reshape2)
 source("run_analysis.R")
 ```
 
