@@ -11,5 +11,5 @@ The result data frame has the following structure:
 | activity.name | Name of the activity                                     | factor  |
 | _featureName_ | Value of a selected feature                              | number  | 
 
-The feature names are close to the original names listed in the features.txt but changed as conform column name.
+The feature names are close to the original names listed in the features.txt but changed as valid column names.
 
